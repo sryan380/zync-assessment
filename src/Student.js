@@ -27,14 +27,13 @@ class Student extends Component {
       let average = student.grades.reduce((a, b) => (~~a + ~~b)) / student.grades.length;
       return studentList.push(
         <div>
-          <div class="hollow_circle">
-            <img src={student.pic} alt={student.firstName} width="100" height="100" />
-          </div>
+          <img class="circle_image" src={student.pic} alt={student.firstName} width="100" height="100" />
           <h3 key={student.firstName}> {student.firstName} {student.lastName} </h3>
           <p key={student.email}>Email: {student.email} </p>
           <p key={student.company}>Company: {student.company} </p>
           <p key={student.skill}>Skill: {student.skill} </p>
           <p key={student.id}>Average: {average.toFixed(2) + "%"} </p>
+          <hr />
         </div>
       )
     })

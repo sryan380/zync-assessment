@@ -1,6 +1,6 @@
-.hollow_circle {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 1px solid black;
+.circle_image {
+  border-radius: 80px;
+  border: 1px solid #000000;
+  width: 100px;
+  height: 100px;
 }
